@@ -1,0 +1,21 @@
+<!-- In this lesson, a new way to override style is introduced. Here it is possible to see that, regardless of
+     any style given by classes, using the id selector to style will override them and assign that style to the
+     corresponding element. See my solution below. -->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+  #orange-text {
+    color: orange;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
