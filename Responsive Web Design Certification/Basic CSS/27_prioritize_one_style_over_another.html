@@ -1,0 +1,16 @@
+<!-- In this lesson, we learn how CSS deals with HTML elements that receive multiple styles that conflict with 
+     one another. The case here is the color conflicting from the body element attribute and from the class that
+     is declared after it and assigned to an element in the body. The class will prevale, see my solution below. -->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+
+  .pink-text {
+    color: pink;
+  }
+</style>
+<h1 class="pink-text">Hello World!</h1>
