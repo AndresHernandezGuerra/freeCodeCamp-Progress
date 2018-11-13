@@ -1,0 +1,19 @@
+<!-- In this lesson, it is possible to see how to override any style previously given to an element. Before it 
+     was illustrated that classes will override style given to the whole body. Now, the most recent class can be 
+     used to override any previous classes in the <style> tag. See my solution below. -->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="blue-text pink-text">Hello World!</h1>
