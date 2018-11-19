@@ -1,0 +1,20 @@
+<!-- In this lesson, the "!important" keyword is introduced. This is a way for CSS to know when it absolutely 
+     needs to apply a certain style element and protect if from overriding. See my solution below. -->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
