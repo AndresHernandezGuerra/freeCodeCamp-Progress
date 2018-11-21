@@ -1,0 +1,16 @@
+<!-- In this lesson, compatibility improvement through browser fallback styles is introduced. This is necessary to
+     have backup styles in case the browser does not support specific CSS styles. This is done by adding a declaration
+     of the element with the fallback option right before the other declaration. See my solution before. -->
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
