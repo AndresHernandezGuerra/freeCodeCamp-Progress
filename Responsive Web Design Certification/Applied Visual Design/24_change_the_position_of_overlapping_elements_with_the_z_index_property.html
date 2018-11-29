@@ -1,0 +1,26 @@
+<!-- In this lesson, the z-index property is introduced. It specifies the order of how elements are stacked on top
+     of one another. Higer indices mean they are higher on top of the stack (only integers). See my solution below. -->
+
+<style>
+  div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  .first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+  }
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: 1;
+  }
+</style>
+
+<div class="first"></div>
+<div class="second"></div>
