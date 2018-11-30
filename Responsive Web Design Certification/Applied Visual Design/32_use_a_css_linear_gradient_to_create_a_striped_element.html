@@ -1,0 +1,23 @@
+<!-- In this lesson, CSS linear gradients are used to create stripes. This is done by using "repeating-linear-gradient"
+     which works with color stops in this manner -> 0px [color1 -- blend -- color2] 40px [color3 -- blend -- color4] 80px.
+     If every two color stops are the same color, stripes are created. See my solution below. -->
+     
+<style>
+
+  div{ 
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin:  50 auto;
+    background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      yellow 40px,
+      black 40px,
+      black 80px
+    );
+  }
+
+</style>
+
+<div></div>
