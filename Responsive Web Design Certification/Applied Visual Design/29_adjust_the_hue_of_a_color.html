@@ -1,0 +1,32 @@
+<!-- In this lesson, a new way of defining colors is introduces. This is by using hsl() [hue, saturation, and lightness]
+     where the "hue" of a color is its position in the 360deg wheel of colors. The saturation is the amount of gray it 
+     has (with 0% being fully gray), and lightness means how much black or white it has (0% is black, 100% is white, and
+     50% is the pure color). See my solution below. -->
+
+<style>
+  body {
+    background-color: #FFFFFF;
+  }
+  
+  .green {
+    background-color: hsl(120,100%,50%);
+  }
+  
+  .cyan {
+    background-color: hsl(180,100%,50%);
+  }
+  
+  .blue {
+    background-color: hsl(240,100%,50%);
+  }
+  
+  div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+</style>
+  
+<div class="green"></div>
+<div class="cyan"></div>
+<div class="blue"></div>
