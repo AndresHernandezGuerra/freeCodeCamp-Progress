@@ -1,0 +1,45 @@
+<!-- In this lesson, the "cubic-bezier" function is introduced. The X-axis of this coordinate system is the duration of 
+     the animation (think of it as a time scale), and the Y-axis is the change in the animation. It consists of four main 
+     points that sit on this 1 by 1 grid p0, p1, p2, and p3. Here, p0 and p3 are set - they are the beginning and end 
+     points always located respectively at the origin (0, 0) and (1, 1). The x and y values for the other two points, need
+     to be set and they dictate the shape of the curve for the animation to follow, in this case linear. See my solution below. -->
+
+<style>
+
+  .balls{
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    position: fixed;  
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #ball1 { 
+    left: 27%;
+    animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  }
+  #ball2 { 
+    left: 56%;
+    animation-timing-function: ease-out;
+  }
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  } 
+  100% {
+    top: 249px;
+  }
+} 
+
+</style>
+
+<div class="balls" id="ball1"></div>
+<div class="balls" id="ball2"></div>
