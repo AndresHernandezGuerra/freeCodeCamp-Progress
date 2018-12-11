@@ -1,0 +1,29 @@
+<!-- In this lesson, the flex-shrink property is introduced. This property, different from the ones learned before, does
+     NOT apply to the flex parent container, but to the flex items. This property allows an element to shrink when the 
+     width of the parent container is smaller than the combined widths of all the flex items within. The number value that
+     is assigned determines how much it shrink, with higher being more shrink ratio. See my solution below. -->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 2;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>

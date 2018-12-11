@@ -1,0 +1,27 @@
+<!-- In this lesson, the flex-grow property is introduced. This property, just like flex-shrink, applies to flex items.
+     This property allows an element to grow when the parent container grows. The number value that is assigned will 
+     determine how much it grows, with higher being more growth ratio. See my solution below. -->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  
+  #box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-grow: 1;
+  }
+  
+  #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-grow: 2;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
