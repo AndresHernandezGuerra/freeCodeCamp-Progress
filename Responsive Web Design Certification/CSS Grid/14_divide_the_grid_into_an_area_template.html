@@ -1,5 +1,7 @@
-<!-- In this lesson, the align-items property is introduced. This property is used to align ALL items within a
-     grid vertically, and accepts the same values as justify-self. See my solution below. -->
+<!-- In this lesson, the grid-template-area property is introduced. This property is used to group cells of your 
+     grid together into an area and give the area a custom name. For example, in the code below, the top three 
+     cells are merged together into an area named header. A"." can be used to designate an empty cell as well. 
+     See my solution below. -->
 
 <style>
   .item1{background:LightSkyBlue;}
@@ -17,11 +19,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
-    /* add your code below this line */
+    /* change code below this line */
     
-    align-items: end;
-
-    /* add your code above this line */
+    grid-template-areas:
+      "header header header"
+      ". content content"
+      "footer footer footer";
+      
+    /* change code above this line */
   }
 </style>
   
